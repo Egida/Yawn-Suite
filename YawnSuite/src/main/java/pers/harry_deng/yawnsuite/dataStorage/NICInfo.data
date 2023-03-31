@@ -1,0 +1,10 @@
+{  "nicNum": "1",  "nicName": "WAN Miniport (Network Monitor)",  "nicIP": "This NIC hasn\u0027t been allocated an IP address",  "nicMAC": "0-0-0-0-0-0"}
+{  "nicNum": "2",  "nicName": "WAN Miniport (IPv6)",  "nicIP": "This NIC hasn\u0027t been allocated an IP address",  "nicMAC": "0-0-0-0-0-0"}
+{  "nicNum": "3",  "nicName": "WAN Miniport (IP)",  "nicIP": "This NIC hasn\u0027t been allocated an IP address",  "nicMAC": "0-0-0-0-0-0"}
+{  "nicNum": "4",  "nicName": "Bluetooth Device (Personal Area Network)",  "nicIP": "169.254.252.48",  "nicMAC": "5c-80-b6-11-c8-d4"}
+{  "nicNum": "5",  "nicName": "Intel(R) Wi-Fi 6 AX200 160MHz",  "nicIP": "172.22.16.250",  "nicMAC": "5c-80-b6-11-c8-d0"}
+{  "nicNum": "6",  "nicName": "VMware Virtual Ethernet Adapter for VMnet8",  "nicIP": "192.168.87.1",  "nicMAC": "0-50-56-c0-0-8"}
+{  "nicNum": "7",  "nicName": "VMware Virtual Ethernet Adapter for VMnet1",  "nicIP": "192.168.42.1",  "nicMAC": "0-50-56-c0-0-1"}
+{  "nicNum": "8",  "nicName": "Microsoft Wi-Fi Direct Virtual Adapter #2",  "nicIP": "169.254.209.181",  "nicMAC": "5e-80-b6-11-c8-d0"}
+{  "nicNum": "9",  "nicName": "Microsoft Wi-Fi Direct Virtual Adapter",  "nicIP": "169.254.148.48",  "nicMAC": "5c-80-b6-11-c8-d1"}
+{  "nicNum": "10",  "nicName": "Adapter for loopback traffic capture",  "nicIP": "This NIC hasn\u0027t been allocated an IP address",  "nicMAC": "0-0-0-0-0-0"}

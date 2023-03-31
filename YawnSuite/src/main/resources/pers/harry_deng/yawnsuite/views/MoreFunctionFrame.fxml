@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="489.0" prefWidth="842.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pers.harry_deng.yawnsuite.controllers.MoreFunctionFrameController">
+   <children>
+      <ImageView fitHeight="240.0" fitWidth="238.0" layoutX="302.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/developing_default.png" />
+         </image>
+      </ImageView>
+      <Text fill="#13aff2" layoutX="243.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New features are being developed!">
+         <font>
+            <Font name="Ink Free" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

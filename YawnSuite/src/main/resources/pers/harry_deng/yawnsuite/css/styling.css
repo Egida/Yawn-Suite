@@ -1,0 +1,116 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5AABD6;
+    -fx-background-radius: 0em;
+}
+
+.button:hover {
+    -fx-background-color: #87D5FF;
+}
+
+.button:pressed {
+    -fx-background-color: #87D5FF;
+}
+
+.button:focused {
+    -fx-background-color: #87D5FF;
+    -fx-border-color: #5AABD6;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+.button2 {
+    -fx-background-color: #196500;
+    -fx-background-radius: 1px 1px 1px 1px;
+    -fx-border-color: #CDD1D6;
+    -fx-border-width: 1px 1px 1px 1px;
+}
+
+.button2:hover {
+    -fx-background-color: #EBE9F6;
+    -fx-border-color: rgba(222, 209, 246, 0.96);
+    -fx-border-width: 1px 1px 1px 1px;
+}
+
+.button2:pressed {
+    -fx-background-color: #196500;
+}
+
+.button2:focused {
+    -fx-background-color: #196500;
+    -fx-background-radius: 1px 1px 1px 1px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.table-view .column-header,
+.table-view .column-header-background.filler {
+    -fx-cell-size: 20;
+    -fx-background-color: #65BDED;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+}
+
+table-view.cell {
+    -fx-cell-size: 30;
+    -fx-alignment: center-left;
+    -fx-text-fill: #000000;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #C6EBFF;
+    -fx-text-fill: #000000;
+
+}
+
+.table-row-cell:selected.text {
+    -fx-text-fill: #000000;
+}
+
+/* scroll bar starts here*/
+
+.table-view.button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 2em;
+}
+
+/* The main scrollbar **track** CSS class */
+.table-view.scroll-bar:horizontal.track,
+.table-view.scroll-bar:vertical.track {
+    -fx-background-color: transparent;
+    -fx-border-color: derive(#41951C, 80%);
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view.scroll-bar:horizontal.thumb,
+.table-view.scroll-bar:vertical.thumb {
+    -fx-border-color: derive(#41951C, 90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+/* chart properties*/
+.chart {
+    -fx-background-color: false;
+    -fx-legend-visible: false;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-pie {
+    -fx-border-color: derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+}
+
+.upperArea
+{
+    -fx-background-color :linear-gradient(to top left, #83D2FC, #ffffff);
+    -fx-background-radius :  30 30 30 30;
+}
+

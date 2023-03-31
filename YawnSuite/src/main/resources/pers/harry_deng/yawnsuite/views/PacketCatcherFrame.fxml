@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="packetPane" prefHeight="489.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pers.harry_deng.yawnsuite.controllers.PacketCatcherFrameController">
+    <children>
+        <VBox prefHeight="489.0" prefWidth="842.0">
+            <children>
+                <HBox prefHeight="29.0" prefWidth="842.0" spacing="10.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#startEvent" prefHeight="25.0" prefWidth="79.0" styleClass="button2" stylesheets="@../css/button2.css" text="Start" textFill="#00a2ee">
+                     <HBox.margin>
+                        <Insets left="20.0" right="30.0" />
+                     </HBox.margin></Button>
+                        <Button mnemonicParsing="false" onAction="#clearEvent" prefWidth="64.0" styleClass="button1" stylesheets="@../css/buttonStyle.css" text="Clear" textFill="#fc5555" />
+                        <Button mnemonicParsing="false" onAction="#stopEvent" prefWidth="64.0" styleClass="button3" stylesheets="@../css/buttonStyle.css" text="Pause" textFill="#f79a4e" />
+                        <Button mnemonicParsing="false" onAction="#refreshEvent" prefWidth="64.0" styleClass="button4" stylesheets="@../css/buttonStyle.css" text="Refresh" textFill="#28c92b">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin></Button>
+                        <Text fill="#00a2ee" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter :" wrappingWidth="44.44970655441284">
+                            <HBox.margin>
+                                <Insets left="81.0" top="5.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Arial Bold Italic" size="14.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="tf_filter" prefHeight="27.0" prefWidth="208.0" promptText="Enter the key word" />
+                        <Button mnemonicParsing="false" onAction="#okEvent" prefHeight="26.0" prefWidth="69.0" styleClass="button2" stylesheets="@../css/buttonStyle.css" text="Search" textFill="#00a2ee" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="25.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox prefHeight="245.0" prefWidth="842.0">
+                    <children>
+                        <TableView fx:id="tv_packet" prefHeight="238.0" prefWidth="795.0" stylesheets="@../css/styling.css">
+                            <columns>
+                                <TableColumn fx:id="tc_num" prefWidth="36.0" text="No." />
+                                <TableColumn fx:id="tc_time" prefWidth="152.57147979736328" text="Time" />
+                                <TableColumn fx:id="tc_source" prefWidth="120.57145690917969" text="Source" />
+                                <TableColumn fx:id="tc_des" minWidth="0.0" prefWidth="131.42852783203125" text="Destination" />
+                                <TableColumn fx:id="tc_pro" prefWidth="81.142822265625" text="Protocol" />
+                                <TableColumn fx:id="tc_length" minWidth="0.0" prefWidth="73.71435546875" text="Length" />
+                                <TableColumn fx:id="tc_info" prefWidth="198.857177734375" text="Info" />
+                            </columns>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="25.0" top="5.0" />
+                            </HBox.margin>
+                        </TableView>
+                    </children>
+                </HBox>
+                <HBox prefHeight="165.0" prefWidth="822.0">
+                    <children>
+                        <TextArea fx:id="infoArea" prefHeight="143.0" prefWidth="796.0">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></TextArea>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="15.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

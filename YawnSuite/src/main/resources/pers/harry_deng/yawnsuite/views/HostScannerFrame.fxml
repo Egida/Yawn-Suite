@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scanPane" prefHeight="489.0" prefWidth="842.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pers.harry_deng.yawnsuite.controllers.HostScannerFrameController">
+    <children>
+        <HBox prefHeight="489.0" prefWidth="842.0">
+            <children>
+                <VBox prefHeight="469.0" prefWidth="321.0">
+                    <children>
+                        <HBox prefHeight="13.0" prefWidth="294.0">
+                            <children>
+                                <Text fill="#00a2ee" strokeType="OUTSIDE" strokeWidth="0.0" text="- Scanning List -" textAlignment="CENTER" wrappingWidth="292.571533203125">
+                                    <font>
+                                        <Font name="Arial Bold Italic" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Text>
+                            </children>
+                        </HBox>
+                        <TextArea fx:id="scanArea" prefHeight="345.0" prefWidth="305.0">
+                            <VBox.margin>
+                                <Insets top="12.0" />
+                            </VBox.margin>
+                        </TextArea>
+                  <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#startScanEvent" prefHeight="33.0" prefWidth="122.0" styleClass="button2" stylesheets="@../css/buttonStyle.css" text="Scan" textAlignment="CENTER" textFill="#00a2ee">
+                     <VBox.margin>
+                        <Insets left="85.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="30.0" right="10.0" top="20.0" />
+                    </HBox.margin>
+                </VBox>
+            <ImageView fitHeight="41.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/rightArrow_icon.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="200.0" />
+               </HBox.margin>
+            </ImageView>
+                <VBox prefHeight="469.0" prefWidth="393.0">
+                    <children>
+                        <HBox prefHeight="19.0" prefWidth="421.0">
+                            <children>
+                                <Text fill="#00a2ee" strokeType="OUTSIDE" strokeWidth="0.0" text="- Hosts on the LAN -" textAlignment="CENTER" wrappingWidth="405.285767018795">
+                                    <font>
+                                        <Font name="Arial Bold Italic" size="17.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Text>
+                            </children>
+                        </HBox>
+                        <TableView fx:id="tb_host" prefHeight="345.0" prefWidth="405.0" stylesheets="@../css/styling.css">
+                            <columns>
+                                <TableColumn fx:id="tc_num" prefWidth="77.14269697666168" text="No." />
+                                <TableColumn fx:id="tc_hostIP" prefWidth="152.57157135009766" text="IP Address" />
+                                <TableColumn fx:id="tc_hostMAC" prefWidth="178.85716247558594" text="MAC Address" />
+                            </columns>
+                            <VBox.margin>
+                                <Insets top="12.0" />
+                            </VBox.margin>
+                        </TableView>
+                  <Button mnemonicParsing="false" onMouseClicked="#refreshEvent" prefHeight="33.0" prefWidth="135.0" styleClass="button3" stylesheets="@../css/buttonStyle.css" text="Refresh" textFill="#f79a4e">
+                     <VBox.margin>
+                        <Insets left="145.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="10.0" right="30.0" top="20.0" />
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MAxPane" prefHeight="541.0" prefWidth="1005.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pers.harry_deng.yawnsuite.controllers.NICChooserFrameController">
+    <children>
+        <BorderPane prefHeight="549.0" prefWidth="1043.0" style="-fx-background-radius: 20px;">
+            <left>
+                <VBox prefHeight="525.0" prefWidth="197.0" style="-fx-background-radius: 0 0 35px 0;" styleClass="upperArea" stylesheets="@../css/styling.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="button1_nic" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#chooseNICEvent" prefHeight="40.0" prefWidth="198.0" text="Choose NIC" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/NIC_icon.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="30.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="10.0" />
+                            </VBox.margin>
+                            <stylesheets>
+                                <URL value="@../css/styling.css" />
+                                <URL value="@../css/styling.css" />
+                            </stylesheets>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#analysisEvent" prefHeight="40.0" prefWidth="198.0" text="Capture Packet" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/Packet_icon.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="30.0" />
+                            </padding>
+                            <stylesheets>
+                                <URL value="@../css/styling.css" />
+                                <URL value="@../css/styling.css" />
+                            </stylesheets>
+                            <VBox.margin>
+                                <Insets bottom="5.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="button2_host" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#scanHostEvent" prefHeight="40.0" prefWidth="197.0" text="Scan Host" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/host_icon.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="30.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets bottom="5.0" />
+                            </VBox.margin>
+                            <stylesheets>
+                                <URL value="@../css/styling.css" />
+                                <URL value="@../css/styling.css" />
+                            </stylesheets>
+                        </Button>
+                        <Button fx:id="button3_arp" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#arpAttackEvent" prefHeight="40.0" prefWidth="197.0" text="ARP Attack" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/sword.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="30.0" />
+                            </padding>
+                            <stylesheets>
+                                <URL value="@../css/styling.css" />
+                                <URL value="@../css/styling.css" />
+                            </stylesheets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#extendEvent" prefHeight="40.0" prefWidth="197.0" text="More Func" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/more_icon.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="30.0" />
+                            </padding>
+                            <stylesheets>
+                                <URL value="@../css/styling.css" />
+                                <URL value="@../css/styling.css" />
+                            </stylesheets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                        </Button>
+                  <BorderPane>
+                     <center>
+                        <ImageView fitHeight="110.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="BOTTOM_CENTER">
+                           <image>
+                              <Image url="@../icons/snowman.png" />
+                           </image>
+                           <BorderPane.margin>
+                              <Insets top="144.0" />
+                           </BorderPane.margin>
+                        </ImageView>
+                     </center>
+                  </BorderPane>
+                    </children>
+                </VBox>
+            </left>
+            <top>
+                <HBox prefHeight="60.0" prefWidth="1046.0" style="-fx-background-radius: 0 0 15px 0;" styleClass="upperArea" stylesheets="@../css/styling.css" BorderPane.alignment="CENTER_LEFT">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="232.0">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/mainLogo.png" />
+                                    </image>
+                                </ImageView>
+                                <Text fill="#6dbee6" strokeType="OUTSIDE" strokeWidth="0.0" text="Yawn Suite" wrappingWidth="176.17137145996094">
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Snap ITC" size="19.0" />
+                                    </font>
+                           <effect>
+                              <Bloom threshold="0.69" />
+                           </effect>
+                                </Text>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </HBox>
+                        <ImageView fx:id="bt_minus" fitHeight="22.0" fitWidth="22.0" onMouseClicked="#minusEvent" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets left="725.0" top="18.0" />
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../icons/big.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="bt_close" fitHeight="31.0" fitWidth="31.0" onMouseClicked="#closeEvent" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icons/close_icon.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="16.0" top="14.0" />
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </top>
+            <right>
+                <AnchorPane fx:id="rootPane" prefHeight="489.0" prefWidth="842.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <BorderPane fx:id="nicPane" prefHeight="489.0" prefWidth="841.0">
+                            <top>
+                                <VBox prefHeight="489.0" prefWidth="808.0">
+                                    <children>
+                                        <HBox prefHeight="84.0" prefWidth="841.0">
+                                            <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="523.0">
+                                                    <children>
+                                                        <Text fill="#00a2ee" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select a network card">
+                                                            <HBox.margin>
+                                                                <Insets left="20.0" right="20.0" />
+                                                            </HBox.margin>
+                                                            <font>
+                                                                <Font name="Microsoft YaHei" size="16.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <TextField fx:id="tf_chosen" prefHeight="32.0" prefWidth="65.0" style="-fx-background-radius: 15px; -fx-border-color: #83D2FC; -fx-border-radius: 15px;" />
+                                                        <Button fx:id="bt_choose" mnemonicParsing="false" onAction="#bt_chooseEvent" prefHeight="32.0" prefWidth="65.0" styleClass="button2" stylesheets="@../css/button2.css" text="Choose" textFill="#228ddb">
+                                                            <HBox.margin>
+                                                                <Insets left="20.0" />
+                                                            </HBox.margin>
+                                                        </Button>
+                                                    </children>
+                                                    <opaqueInsets>
+                                                        <Insets left="10.0" />
+                                                    </opaqueInsets>
+                                                </HBox>
+                                            </children>
+                                            <opaqueInsets>
+                                                <Insets />
+                                            </opaqueInsets>
+                                        </HBox>
+                                        <TableView fx:id="tv_NIC" prefHeight="349.0" prefWidth="800.0" stylesheets="@../css/styling.css">
+                                            <columns>
+                                                <TableColumn fx:id="tc_num" prefWidth="40.0" text="No." />
+                                                <TableColumn fx:id="tc_nicName" prefWidth="288.0000228881836" text="Name" />
+                                                <TableColumn fx:id="tc_nicIP" prefWidth="326.4000244140625" text="IP Address" />
+                                                <TableColumn fx:id="tc_nicMAC" prefWidth="148.0" text="MAC Address" />
+                                            </columns>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="17.0" right="20.0" />
+                                            </VBox.margin>
+                                        </TableView>
+                                    </children>
+                                </VBox>
+                            </top>
+                        </BorderPane>
+                    </children>
+                </AnchorPane>
+            </right>
+        </BorderPane>
+    </children>
+</AnchorPane>
