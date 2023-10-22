@@ -1,4 +1,4 @@
-# YawnSuite
+# 🥱 Yawn Suite
 >A cyber attack software similar to Burp Suite, enabling ARP and DDoS attacks on hosts within LAN.
 
 User Interface
